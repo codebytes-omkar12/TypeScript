@@ -9,3 +9,5 @@ function optionalGreet(name:String, age?:number):string{
 
 // console.log(optionalGreet("Omkar",21));
 console.log(optionalGreet("Pragya"));
+
+// if that paremetr is absent in the function call then it;s type will be undefined.
