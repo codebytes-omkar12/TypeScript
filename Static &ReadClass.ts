@@ -31,7 +31,16 @@ class veichle{
     }
 }
 
-class car extends veichle{
-    
+
+    class car extends veichle {
+    drive():string{
+        return `Car is Driving`
+    }
 }
+
+
+const ford= new car("ford",1971);
+
+console.log(ford.start());
+console.log(ford.drive());
 
