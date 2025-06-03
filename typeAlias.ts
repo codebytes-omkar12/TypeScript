@@ -2,14 +2,15 @@ type chair= string;
 type Order=[string,number];
 
 
-let orderList2:Order;
-orderList=["TV",10];
+let orderList2:Order=['tv',10];
 
-function printOrderListfunc(order1:Order):string{
-    return`Order${order1[0]} x ${order1[1]}`
+
+
+function printOrderListfunc(order1: Order): string {
+    return `Order${order1[0]} x ${order1[1]}`;
 }
 
-console.log(printOrderList(orderList));
+console.log(printOrderListfunc(orderList2));
 
 //
 type User ={
