@@ -14,4 +14,24 @@ let me = {
 };
 me.email = "omkar@123.com";
 console.log(me);
-// me.username="stalin"; erro as usrname is  only read-only.
+const Jack = {
+    name: "Jack",
+    rollNumber: 2102070075,
+    address: {
+        city: "cincinati",
+        pinCode: 757002
+    }
+};
+console.log(Jack.address.city);
+const directory = {
+    mom: 6371234567,
+    dad: 9583412345,
+    she: 9776512345
+};
+console.log(directory["dad"]);
+const adminUser = {
+    name: "Rakesh",
+    email: "rakesh@123.com",
+    isAdmin: true
+};
+console.log(adminUser);
