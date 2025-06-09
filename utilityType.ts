@@ -50,3 +50,14 @@ const cats: Record<CatName, CatInfo> = {
   boris: { age: 5, breed: "Maine Coon" },
   mordred: { age: 16, breed: "British Shorthair" },
 };
+
+
+//awaited type
+async function fetchData(): Promise<number> {
+  return 42;
+}
+
+type Result = Awaited<ReturnType<typeof fetchData>>; // number
+
+type K = Promise<Promise<number>>;
+type D = Awaited<C>; // number
